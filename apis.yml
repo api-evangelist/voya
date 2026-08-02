@@ -1,7 +1,26 @@
 aid: voya
 name: Voya
-description: Voya is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Voya GmbH is a software development and consulting company based in Hamburg,
+  Germany, with nearshore TechHubs in Bucharest and Cluj, Romania. Founded in 2015
+  as an AI-powered chat-based business-travel booking platform backed by 500 Global,
+  it became a wholly-owned Volkswagen Group subsidiary and has been an independent,
+  founder-led company again since November 2024. Today Voya delivers end-to-end software
+  development, applied AI solutions, and engineering team building for automotive,
+  mobility, and travel clients including Volkswagen, Audi, CARIAD, Deutsche Bahn,
+  and Lufthansa City Center. TISAX certified. Voya publishes no public API or developer
+  portal.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.sanity.io/images/sn6yku2f/production/5dde5c37671f13ee0494bf1e4264e5f7238abb63-1200x630.png
 url: https://raw.githubusercontent.com/api-evangelist/voya/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Software Development
+- Consulting
+- Artificial Intelligence
+- Automotive
+- Mobility
+- Travel
+- Nearshoring
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,26 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/voya-domain-security.yml
 - type: Website
   url: https://voya.ai
+- type: Website
+  url: https://www.voya.de/
+- type: LLMsTxt
+  url: llms/voya-llms.txt
+- type: TermsOfService
+  url: https://www.voya.de/agb
+- type: PrivacyPolicy
+  url: https://www.voya.de/datenschutz
+- type: Imprint
+  url: https://www.voya.de/impressum
+- type: Careers
+  url: https://www.voya.de/karriere
+- type: Contact
+  url: https://www.voya.de/kontakt
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1

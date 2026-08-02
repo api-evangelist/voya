@@ -1,0 +1,65 @@
+generated: '2026-07-21'
+method: searched
+source: live HTTP probes of voya.ai and www.voya.de
+note: voya.ai 307-redirects to www.voya.de (Next.js on Vercel). The site soft-404s
+  unknown paths with HTTP 200 + site HTML, verified by comparing against a known-bogus
+  path. No /.well-known/ discovery documents are published; statuses below record
+  the soft-404 behavior honestly. robots.txt is the only real machine-readable file.
+hosts:
+- host: https://voya.ai
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    soft_404: true
+    published: false
+  - path: /.well-known/openid-configuration
+    status: 200
+    soft_404: true
+    published: false
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    soft_404: true
+    published: false
+  - path: /.well-known/api-catalog
+    status: 200
+    soft_404: true
+    published: false
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    soft_404: true
+    published: false
+  - path: /llms.txt
+    status: 200
+    soft_404: true
+    published: false
+  - path: /robots.txt
+    status: 200
+    soft_404: false
+    published: true
+    content_type: text/plain
+- host: https://www.voya.de
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    soft_404: true
+    published: false
+  - path: /.well-known/openid-configuration
+    status: 200
+    soft_404: true
+    published: false
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    soft_404: true
+    published: false
+  - path: /.well-known/api-catalog
+    status: 200
+    soft_404: true
+    published: false
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    soft_404: true
+    published: false
+  - path: /llms.txt
+    status: 200
+    soft_404: true
+    published: false
