@@ -33,6 +33,9 @@ accessModel:
   method: derived
 image: https://cdn.sanity.io/images/sn6yku2f/production/5dde5c37671f13ee0494bf1e4264e5f7238abb63-1200x630.png
 url: https://raw.githubusercontent.com/api-evangelist/voya/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "Voya publishes no public API or developer portal."
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
